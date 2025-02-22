@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
-import { LegendProps } from "recharts";
+// import { LegendProps } from "recharts";
 
 // Define the data type
 type DataPoint = {
