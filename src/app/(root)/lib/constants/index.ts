@@ -8,6 +8,7 @@ import CardRequest from '../../../../../public/asset/credit-card-accept.svg'
 import Stock from '../../../../../public/asset/stock.svg'
 import Cards from '../../../../../public/asset/credit-card.svg'
 import List from '../../../../../public/asset/list.svg'
+import Queue from '../../../../../public/asset/queue.svg'
 // import Quick from '../../../../../public/asset/quick.svg'
 // import Analytic_1 from '../../../../../public/asset/analytic.svg'
 // import Analytics_2 from '../../../../../public/asset/Analytic_2.svg'
@@ -65,7 +66,7 @@ label: "Card Profile",
                 label: "Authorization List",
                 },
                 {
-                    // imgURL: CreditCard,
+                    imgURL: Queue,
                     route: "/create-post",
                     label: "Authorization Queue",
                     },
