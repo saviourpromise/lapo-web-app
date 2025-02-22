@@ -1,7 +1,7 @@
 import React from 'react'
 // import Ana from '../../../../../../../public/asset/analytic.svg'
 // import ArrowUp from '../../../../../../../public/asset/arrowup.svg'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Analytic } from '@/app/(root)/lib/constants'
 const Analytics = () => {
 return (

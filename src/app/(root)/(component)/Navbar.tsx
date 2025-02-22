@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 // import Home from '../../../../public/asset/Home.svg';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Searchbar from './Searchbar';
 // import Notification from '../../../../public/asset/notification.svg';
 // import Dropdown from '../../../../public/asset/Dropdown.svg';
