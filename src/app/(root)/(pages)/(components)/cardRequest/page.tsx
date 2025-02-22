@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
-// import DoubleArrow from '../../../../../../../public/asset/doublearrow.svg'
-// import Image from 'next/image'
+import DoubleArrow from '../../../../../../public/asset/doublearrow.svg'
+import Image from 'next/image'
 import { tableData } from '@/app/(root)/lib/constants'
 const CardRequest = () => {
 return (
@@ -9,7 +9,7 @@ return (
 
 <div className='flex justify-between px-2'>
 <p className='text-[18px] font-medium mt-1'>Recent Card Requests</p>
-{/* <Image src={DoubleArrow} alt='Double Arrow'/> */}
+<Image src={DoubleArrow} alt='Double Arrow'/>
 </div>
 
 <div className=" container py-4 max-sm:w-full" style={{ width: "100%", height: 300 }} >

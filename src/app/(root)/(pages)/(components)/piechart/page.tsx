@@ -1,6 +1,7 @@
+'use client';
 import React from "react";
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
-// import { LegendProps } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
+import { LegendProps } from "recharts";
 
 // Define the data type
 type DataPoint = {
@@ -10,18 +11,18 @@ value: number;
 
 // Sample Data
 const data: DataPoint[] = [
-{ name: "Jan", value: 40 },
-{ name: "Feb", value: 30 },
-{ name: "Mar", value: 50 },
-{ name: "Apr", value: 45 },
-{ name: "May", value: 60 },
+{ name: "Active", value: 60 },
+{ name: "Expired", value: 30 },
+{ name: "Blocked", value: 30 },
+{ name: "Lost", value: 25 },
+{ name: "Expired", value: 35 },
 ];
 
 // Custom colors for each slice
 const COLORS = ["#01A4AF", "#FFBA24", "#FF4457", "#8020E7", "#014DAF"];
 
 // Custom Legend Renderer
-// const renderLegend = (props: LegendProps) => {
+// const RenderLegend = (props: LegendProps) => {
 // const { payload } = props;
 // return (
 // <ul className="flex justify-center mt-2 space-x-4 text-[12px] text-gray-700">
@@ -58,7 +59,7 @@ label
 ))}
 </Pie>
 <Tooltip />
-{/* <Legend content={renderLegend} /> */}
+<Legend />
 </PieChart>
 </ResponsiveContainer>
 </div>
