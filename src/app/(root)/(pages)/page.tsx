@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 // import { useState } from 'react'
-// import Date from '../../../../../public/asset/date.svg'
-// import Image from 'next/image'
+import Date from '../../../../public/asset/date.svg'
+import Image from 'next/image'
 import { QuickAccess } from '../lib/constants'
 import { IoIosArrowForward } from 'react-icons/io'
 import Analytics from "@/app/(root)/(pages)/(components)/analytics/page"
@@ -32,7 +32,7 @@ scrollbar-width: none; /* Firefox */
 
                 <button className='border border-[#D0D5DD] flex gap-3 px-2 py-1 items-center rounded-lg max-sm:mb-3 max-sm:mt-3'>
                     <div className='flex gap-1 items-center'>
-                        {/* <Image src={Date} alt='date' /> */}
+                        <Image src={Date} alt='date' />
                         <p className='text-[12px] font-medium text-[#121212]'>Today</p>
                     </div>
                     |
@@ -48,7 +48,7 @@ scrollbar-width: none; /* Firefox */
                 <div className='grid xl:grid-cols-4 md:grid-cols-2 gap-3 mt-4 max-sm:grid-cols-1'>
                     {QuickAccess.map((items, index) => (
                         <div className='bg-[#F1F7FF] flex items-center p-4 gap-4 rounded-md ' key={index}>
-                            {/* <Image src={items.imageUrl} alt='Images' /> */}
+                            <Image src={items.imageUrl} alt='Images' />
                             <div className='flex gap-1 items-center'>
                                 <p className=' font-medium text-[#121212] text-[15px] '>{items.label}</p>
                                 <IoIosArrowForward size={16} color="#000" />

@@ -1,27 +1,20 @@
-// import Image from "next/image";
+"use client"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "./(root)/(component)/Navbar";
-
+// import Leftsidebar from "./(root)/(component)/Leftsidebar";
 import Homepage from "./(root)/(pages)/page";
-
-
+import CardProfile from "./(root)/(pages)/cardProfile/page";
+import CardRequests from "./(root)/(pages)/cardRequests/page";
 
 export default function Home() {
-
-    return (
-
-        <div className="">
-
-            <Navbar />
-
-            <>
-
-                <Homepage />
-
-            </>
-
-        </div>
-
-    );
-
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/cardProfile" element={<CardProfile />} />
+        <Route path="/cardRequests" element={<CardRequests />} />
+      </Routes>
+    </Router>
+  );
 }

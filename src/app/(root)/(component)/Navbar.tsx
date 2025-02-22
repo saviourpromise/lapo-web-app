@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-// import Home from '../../../../public/asset/Home.svg';
-// import Image from 'next/image';
+import Home from '../../../../public/asset/Home.svg';
+import Image from 'next/image';
 import Searchbar from './Searchbar';
 // import Notification from '../../../../public/asset/notification.svg';
 // import Dropdown from '../../../../public/asset/Dropdown.svg';
@@ -14,8 +14,8 @@ const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 return (
 <div className='"hidden xl:flex xl:w-[82vw] md:w-full max-sm:w-full border-[#DEDEDF] bg-white border p-3 flex justify-between px-3'>
 <div className="flex gap-1 items-center w-full">
-{/* <Image src={Home} alt="Home" className="w-5 h-5 max-sm:w-7 max-sm:h-7" /> */}
-<p className="text-[#001735] text-[14px] max-sm:text-[16px] font-medium">Dashboard</p>
+<Image src={Home} alt="Home" className="w-5 h-5 max-sm:w-7 max-sm:h-7" />
+<p className="text-[#001735] text-[12px] max-sm:text-[16px] font-medium">Dashboard</p>
 </div>
 
 <div className="flex items-center gap-6 w-[55%] max-sm:w-[40%]">

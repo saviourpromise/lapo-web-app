@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
@@ -9,11 +10,13 @@ sales: number;
 
 // Sample Data
 const data: DataPoint[] = [
-{ month: "Jan", sales: 4000 },
-{ month: "Feb", sales: 3000 },
-{ month: "Mar", sales: 5000 },
-{ month: "Apr", sales: 4500 },
-{ month: "May", sales: 6000 },
+{ month: "Mon", sales: 4000 },
+{ month: "Tue", sales: 3000 },
+{ month: "Wed", sales: 5000 },
+{ month: "Thu", sales: 4500 },
+{ month: "Fri", sales: 6000 },
+{ month: "Sat", sales: 7000 },
+{ month: "Sun", sales: 8000 },
 ];
 
 const SalesLineChart: React.FC = () => {

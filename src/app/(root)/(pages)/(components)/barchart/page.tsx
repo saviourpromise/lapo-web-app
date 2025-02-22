@@ -13,11 +13,11 @@ profit: number;
 
 
 const data: DataPoint[] = [
-{ name: "Jan", sales: 4000, expenses: 2000, profit: 2000 },
-{ name: "Feb", sales: 3000, expenses: 1500, profit: 1500 },
-{ name: "Mar", sales: 5000, expenses: 2200, profit: 2800 },
-{ name: "Apr", sales: 4500, expenses: 1800, profit: 2700 },
-{ name: "May", sales: 6000, expenses: 2500, profit: 3500 },
+{ name: "May", sales: 4000, expenses: 2000, profit: 2000 },
+{ name: "Jun", sales: 3000, expenses: 1500, profit: 1500 },
+{ name: "Jul", sales: 5000, expenses: 2200, profit: 2800 },
+{ name: "Aug", sales: 4500, expenses: 1800, profit: 2700 },
+{ name: "Sep", sales: 6000, expenses: 2500, profit: 3500 },
 ];
 
 const SalesBarChart: React.FC = () => {

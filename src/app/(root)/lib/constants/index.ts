@@ -9,11 +9,13 @@ import Stock from '../../../../../public/asset/stock.svg'
 import Cards from '../../../../../public/asset/credit-card.svg'
 import List from '../../../../../public/asset/list.svg'
 import Queue from '../../../../../public/asset/queue.svg'
-// import Quick from '../../../../../public/asset/quick.svg'
-// import Analytic_1 from '../../../../../public/asset/analytic.svg'
-// import Analytics_2 from '../../../../../public/asset/Analytic_2.svg'
-// import BankNote from '../../../../../public/asset/bank-note-01.svg'
-// import Hour_glass from '../../../../../public/asset/hourglass-03.svg'
+import Trail from '../../../../../public/asset/trial.svg'
+import Account from '../../../../../public/asset/user.svg'
+import Quick from '../../../../../public/asset/quick.svg'
+import Analytic_1 from '../../../../../public/asset/analytic.svg'
+import Analytics_2 from '../../../../../public/asset/Analytic_2.svg'
+import BankNote from '../../../../../public/asset/bank-note-01.svg'
+import Hour_glass from '../../../../../public/asset/hourglass-03.svg'
 export const sidebarLinks = [
 {
 imgURL: Home,
@@ -42,12 +44,12 @@ label: "Card Scheme",
 },
 {
 imgURL: CreditCard,
-route: "/create-post",
+route: "/cardProfile",
 label: "Card Profile",
 },
 {
     imgURL: CardRequest,
-    route: "/create-post",
+    route: "/cardRequests",
     label: "Card Request",
     },
     {
@@ -71,12 +73,12 @@ label: "Card Profile",
                     label: "Authorization Queue",
                     },
                     {
-                        // imgURL: CreditCard,
+                        imgURL: Trail,
                         route: "/create-post",
                         label: "Trail",
                         },
                         {
-                            // imgURL: CreditCard,
+                            imgURL: Account,
                             route: "/create-post",
                             label: "Account",
                             },
@@ -84,47 +86,47 @@ label: "Card Profile",
 
 export const QuickAccess = [
 {
-// imageUrl: Quick,
+imageUrl: Quick,
 label: 'Manage a Card',
 },
 {
-// imageUrl: Quick,
+imageUrl: Quick,
 label: 'Issue Instant Card',
 },
 {
-// imageUrl: Quick,
+imageUrl: Quick,
 label: 'Issue Personalized Card',
 },
 {
-// imageUrl: Quick,
+imageUrl: Quick,
 label: 'Review Card Requests',
 },
 ]
 
 export const Analytic = [
 {
-// imageUrl: Analytic_1,
+imageUrl: Analytic_1,
 label: 'Total Active Cards',
 total: '26,478',
 margin: '9%',
 month: 'this month'
 },
 {
-// imageUrl: Analytics_2,
+imageUrl: Analytics_2,
 label: 'Total Personalized Cards',
 total: '15,703',
 margin: '8.5%',
 month: 'this month'
 },
 {
-// imageUrl: BankNote,
+imageUrl: BankNote,
 label: 'Today’s Revenue',
 total: '₦9.3M',
 margin: '6%',
 month: 'vs yesterday'
 },
 {
-// imageUrl: Hour_glass,
+imageUrl: Hour_glass,
 label: 'Pending Requests',
 total: '38',
 margin: '9%',
@@ -133,10 +135,10 @@ month: 'Requires attention'
 ]
 
 export const tableData = [
-{ name: "Corporate", cardType: "Instant", qty: 10, check:'Acknowledged', action: "View" },
-{ name: "Corporate", cardType: "Personalized", qty: 40, check:'Acknowledged', action: "View" },
+{ name: "Corporate", cardType: "Instant", qty: 10, check:'Ready', action: "View" },
+{ name: "Corporate", cardType: "Personalized", qty: 40, check:'In Progress', action: "View" },
 { name: "Corporate", cardType: "Personalized", qty: 20, check:'Acknowledged', action: "View" },
-{ name: "Corporate", cardType: "Instant", qty: 13, check:'Acknowledged', action: "View" },
+{ name: "Corporate", cardType: "Instant", qty: 13, check:'Pending', action: "View" },
 
 ];
 // export const bottombarLinks = [
