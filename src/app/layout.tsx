@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Leftsidebar from '@/app/(root)/(component)/Leftsidebar'
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {

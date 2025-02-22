@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import { useState } from 'react'
+// import { useState } from 'react'
 // import Date from '../../../../../public/asset/date.svg'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { QuickAccess } from '../lib/constants'
 import { IoIosArrowForward } from 'react-icons/io'
 import Analytics from "@/app/(root)/(pages)/(components)/analytics/page"

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 // import DoubleArrow from '../../../../../../../public/asset/doublearrow.svg'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { tableData } from '@/app/(root)/lib/constants'
 const CardRequest = () => {
 return (

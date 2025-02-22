@@ -1,5 +1,6 @@
 import React from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
+// import { LegendProps } from "recharts";
 
 // Define the data type
 type DataPoint = {
@@ -20,22 +21,22 @@ const data: DataPoint[] = [
 const COLORS = ["#01A4AF", "#FFBA24", "#FF4457", "#8020E7", "#014DAF"];
 
 // Custom Legend Renderer
-const renderLegend = (props: any) => {
-const { payload } = props;
-return (
-<ul className="flex justify-center mt-2 space-x-4 text-[12px] text-gray-700">
-{payload.map((entry: any, index: number) => (
-<li key={`item-${index}`} className="flex items-center space-x-1">
-<span
-className="w-3 h-3 inline-block rounded-full"
-style={{ backgroundColor: entry.color }}
-></span>
-<span>{entry.value}</span>
-</li>
-))}
-</ul>
-);
-};
+// const renderLegend = (props: LegendProps) => {
+// const { payload } = props;
+// return (
+// <ul className="flex justify-center mt-2 space-x-4 text-[12px] text-gray-700">
+//       {payload?.map((entry, index) => (
+//         <li key={`item-${index}`} className="flex items-center space-x-1">
+//           <span
+//             className="w-3 h-3 inline-block rounded-full"
+//             style={{ backgroundColor: entry.color }}
+//           ></span>
+//           <span>{entry.value}</span>
+//         </li>
+//       ))}
+//     </ul>
+// );
+// };
 
 const SalesPieChart: React.FC = () => {
 return (
@@ -57,7 +58,7 @@ label
 ))}
 </Pie>
 <Tooltip />
-<Legend content={renderLegend} />
+{/* <Legend content={renderLegend} /> */}
 </PieChart>
 </ResponsiveContainer>
 </div>
